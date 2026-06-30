@@ -1,5 +1,6 @@
 const chips = [...document.querySelectorAll(".chip")];
 const searchInput = document.getElementById("searchInput");
+const promptSections = [...document.querySelectorAll(".prompt-section")];
 
 let activeFilter = "all";
 let cards = [];
@@ -8,17 +9,34 @@ function refreshCards() {
   cards = [...document.querySelectorAll(".prompt-card")];
 }
 
+function updateSections() {
+  promptSections.forEach((section) => {
+    const sectionCards = [...section.querySelectorAll(".prompt-card")];
+    if (sectionCards.length === 0) {
+      section.classList.remove("section-hidden");
+      return;
+    }
+
+    const hasVisibleCards = sectionCards.some(
+      (card) => !card.classList.contains("hidden")
+    );
+    section.classList.toggle("section-hidden", !hasVisibleCards);
+  });
+}
+
 function updateCards() {
   refreshCards();
   const query = searchInput.value.trim().toLowerCase();
 
   cards.forEach((card) => {
     const category = card.dataset.category;
-    const text = card.innerText.toLowerCase();
+    const text = card.textContent.toLowerCase();
     const matchesFilter = activeFilter === "all" || category === activeFilter;
     const matchesQuery = !query || text.includes(query);
     card.classList.toggle("hidden", !(matchesFilter && matchesQuery));
   });
+
+  updateSections();
 }
 
 chips.forEach((chip) => {
@@ -53,5 +71,12 @@ function bindCopyButtons() {
   });
 }
 
-refreshCards();
-bindCopyButtons();
+function syncPromptUI() {
+  refreshCards();
+  bindCopyButtons();
+  updateCards();
+}
+
+window.syncPromptUI = syncPromptUI;
+
+syncPromptUI();

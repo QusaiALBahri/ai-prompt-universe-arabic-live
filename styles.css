@@ -300,6 +300,10 @@ a {
   display: none;
 }
 
+.prompt-section.section-hidden {
+  display: none;
+}
+
 .prompt-meta {
   display: flex;
   justify-content: space-between;

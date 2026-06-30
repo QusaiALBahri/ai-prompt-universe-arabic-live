@@ -23,4 +23,8 @@
   if (countNode) {
     countNode.textContent = window.curatedPrompts.length.toString();
   }
+
+  if (typeof window.syncPromptUI === "function") {
+    window.syncPromptUI();
+  }
 })();

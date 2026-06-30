@@ -21,4 +21,8 @@
   if (countNode) {
     countNode.textContent = window.creativePrompts.length.toString();
   }
+
+  if (typeof window.syncPromptUI === "function") {
+    window.syncPromptUI();
+  }
 })();
