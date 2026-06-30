@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موسوعة البرومتات والـ Instructions للذكاء الاصطناعي</title>
+    <meta
+      name="description"
+      content="منصة عربية شاملة لأقوى البرومتات والـ instructions وملفات JSON الجاهزة لأنظمة الذكاء الاصطناعي."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+          <div class="eyebrow">AI Prompt Universe</div>
+          <h1>موسوعة البرومتات والـ Instructions لأنظمة الذكاء الاصطناعي</h1>
+          <p class="hero-text">
+            صفحة عربية عملية تجمع أهم البرومتات العامة والمتخصصة، وقوالب JSON الجاهزة،
+            وتنتهي بـ instruction شاملة قوية لتحسين سلوك النماذج مثل ChatGPT وGemini
+            وQwen والنماذج المشابهة.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#prompt-library">ابدأ من البرومتات</a>
+            <a class="button ghost" href="#mega-instruction">اذهب إلى الـ Instruction الشاملة</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>12</strong>
+              <span>مجالاً عملياً</span>
+            </div>
+            <div class="stat-card">
+              <strong>5</strong>
+              <span>ملفات JSON جاهزة</span>
+            </div>
+            <div class="stat-card">
+              <strong>1</strong>
+              <span>Instruction شاملة</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section intro-panel" id="overview">
+          <div class="section-head">
+            <span class="kicker">كيف تستفيد</span>
+            <h2>ما الذي ستجده هنا؟</h2>
+          </div>
+          <div class="intro-grid">
+            <article class="info-card">
+              <h3>برومتات جاهزة</h3>
+              <p>قوالب مكتوبة بالعربية، قابلة للنسخ مباشرة، ومصممة لتغطي معظم الاستخدامات العملية.</p>
+            </article>
+            <article class="info-card">
+              <h3>صياغة احترافية</h3>
+              <p>كل برومت مبني على مبادئ واضحة: تحديد الدور، الهدف، القيود، المعايير، والمخرجات المطلوبة.</p>
+            </article>
+            <article class="info-card">
+              <h3>ملفات JSON</h3>
+              <p>قوالب منظّمة لمن يريد بناء prompts قابلة للأتمتة أو التخزين أو التشغيل داخل أنظمة workflow.</p>
+            </article>
+            <article class="info-card">
+              <h3>قسم مرجعي للمصادر</h3>
+              <p>روابط مختارة من أدلة OpenAI وAnthropic وGoogle Gemini وPrompting Guide للاستزادة والتحقق.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section controls">
+          <div class="section-head">
+            <span class="kicker">بحث سريع</span>
+            <h2>فلتر البرومتات حسب المجال</h2>
+          </div>
+          <div class="toolbar">
+            <input id="searchInput" type="search" placeholder="ابحث: برمجة، تسويق، تعليم، JSON..." />
+            <div class="chip-row">
+              <button class="chip active" data-filter="all">الكل</button>
+              <button class="chip" data-filter="عام">عام</button>
+              <button class="chip" data-filter="كتابة">كتابة</button>
+              <button class="chip" data-filter="برمجة">برمجة</button>
+              <button class="chip" data-filter="تحليل">تحليل</button>
+              <button class="chip" data-filter="بحث">بحث</button>
+              <button class="chip" data-filter="تسويق">تسويق</button>
+              <button class="chip" data-filter="تعليم">تعليم</button>
+              <button class="chip" data-filter="JSON">JSON</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="prompt-library">
+          <div class="section-head">
+            <span class="kicker">Prompt Library</span>
+            <h2>أشهر وأقوى البرومتات في مجالات مختلفة</h2>
+          </div>
+          <div class="prompt-grid">
+            <article class="prompt-card" data-category="عام">
+              <div class="prompt-meta"><span>عام</span><span>تفكير منظم</span></div>
+              <h3>برومت المدير التنفيذي للتفكير</h3>
+              <p>ممتاز عندما تريد من النموذج أن يحلل، يخطط، ويعطيك قراراً عملياً بدلاً من كلام عام.</p>
+              <pre><code>أنت خبير استراتيجي عملي. حلل طلبي كالتالي:
+1) لخص الهدف في سطر واحد.
+2) استخرج الافتراضات والمخاطر.
+3) اقترح 3 مسارات تنفيذ مرتبة من الأفضل إلى الأضعف.
+4) اختر المسار الأقوى وفسر لماذا.
+5) أعطني خطة تنفيذ من خطوات واضحة قابلة للتطبيق.
+6) إذا كانت المعلومات ناقصة، اسأل فقط عن الأسئلة الحاسمة.
+
+الطلب:
+[اكتب الطلب هنا]</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="كتابة">
+              <div class="prompt-meta"><span>كتابة</span><span>محتوى احترافي</span></div>
+              <h3>برومت الكاتب العربي المحترف</h3>
+              <p>للمقالات، وصف المنتجات، صفحات الهبوط، والنصوص التي يجب أن تبدو بشرية وواضحة.</p>
+              <pre><code>أنت كاتب عربي محترف. اكتب النص بأسلوب طبيعي قوي وواضح، بدون حشو وبدون نبرة آلية.
+المطلوب:
+- نوع المحتوى: [مقال / إعلان / صفحة هبوط / منشور]
+- الجمهور المستهدف: [اكتب هنا]
+- الهدف: [إقناع / توضيح / بيع / تعليم]
+- النبرة: [رسمية / ودية / حادة / فاخرة]
+- الطول: [قصير / متوسط / طويل]
+
+شروط مهمة:
+- افتح بمقدمة قوية.
+- استخدم أمثلة أو فوائد ملموسة.
+- اجعل كل فقرة تخدم الهدف.
+- اختم بدعوة واضحة لاتخاذ إجراء.</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="برمجة">
+              <div class="prompt-meta"><span>برمجة</span><span>تنفيذ وتصحيح</span></div>
+              <h3>برومت المهندس البرمجي الكبير</h3>
+              <p>للبرمجة، إصلاح الأخطاء، مراجعة المعمارية، وتحويل الطلبات إلى كود سليم وقابل للصيانة.</p>
+              <pre><code>تصرف كمهندس برمجيات كبير جداً.
+أريد منك أن:
+1) تفهم الهدف الوظيفي قبل كتابة الكود.
+2) تحدد القيود والمخاطر المحتملة.
+3) تقترح أبسط تصميم صحيح.
+4) تكتب حلاً نظيفاً وقابلاً للصيانة.
+5) تشرح لي لماذا اخترت هذا الحل.
+6) تضيف اختبارات أو حالات تحقق إن كانت مناسبة.
+7) إذا وجدت غموضاً، فاسأل عن أقل عدد من الأسئلة الضرورية.
+
+المهمة:
+[ضع المهمة البرمجية هنا]
+
+صيغة الإخراج:
+- فهم المشكلة
+- الحل المقترح
+- الكود
+- خطوات التحقق</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="تحليل">
+              <div class="prompt-meta"><span>تحليل</span><span>بيانات وقرارات</span></div>
+              <h3>برومت محلل البيانات التنفيذي</h3>
+              <p>مناسب لتلخيص الجداول، استخراج الأنماط، واستخراج توصيات قابلة للتنفيذ.</p>
+              <pre><code>أنت محلل بيانات تنفيذي. حلل البيانات أو النص الذي سأرسله لك ثم:
+- استخرج أهم 5 ملاحظات
+- حدد أي شذوذ أو تناقض
+- اشرح ما الذي يعنيه ذلك عملياً
+- اقترح قرارات أو إجراءات مبنية على التحليل
+- إن كانت البيانات غير كافية، اذكر ما الذي نحتاجه بالضبط
+
+البيانات / الوصف:
+[ضع البيانات هنا]</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="بحث">
+              <div class="prompt-meta"><span>بحث</span><span>تلخيص وتدقيق</span></div>
+              <h3>برومت الباحث المنهجي</h3>
+              <p>لتجميع المعلومات، المقارنة بين المصادر، والفصل بين الحقائق والاستنتاجات.</p>
+              <pre><code>أنت باحث منهجي دقيق.
+نفذ الآتي:
+1) حدد السؤال البحثي بدقة.
+2) افصل بين الحقائق المؤكدة والاستنتاجات المحتملة.
+3) قارن بين الآراء أو المصادر إن وجدت.
+4) اذكر نقاط القوة والضعف في كل اتجاه.
+5) اختم بخلاصة عملية قصيرة.
+
+الموضوع:
+[ضع الموضوع هنا]</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="تسويق">
+              <div class="prompt-meta"><span>تسويق</span><span>مبيعات ورسائل</span></div>
+              <h3>برومت مخطط الحملات التسويقية</h3>
+              <p>للحملات، القمع التسويقي، الرسائل الإعلانية، وزوايا البيع المختلفة.</p>
+              <pre><code>أنت استراتيجي تسويق وأداء.
+ابنِ لي حملة تسويقية كاملة على هذا الأساس:
+- المنتج / الخدمة: [اكتب هنا]
+- العميل المثالي: [اكتب هنا]
+- المشكلة التي نحلها: [اكتب هنا]
+- العرض: [اكتب هنا]
+- القنوات: [Meta / Google / Email / TikTok / LinkedIn]
+
+أريد المخرجات التالية:
+1) الزاوية التسويقية الأساسية
+2) 3 رسائل إعلانية
+3) 3 عناوين جذابة
+4) CTA مناسب
+5) اقتراح funnel مختصر
+6) أخطاء يجب تجنبها</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="تعليم">
+              <div class="prompt-meta"><span>تعليم</span><span>شرح وتدريب</span></div>
+              <h3>برومت المعلم الشخصي</h3>
+              <p>ممتاز لتعليم موضوع من الصفر أو لتحويل موضوع معقد إلى شرح متدرج وتمارين.</p>
+              <pre><code>أنت معلم شخصي ممتاز.
+اشرح الموضوع التالي لي بطريقة تدريجية:
+- ابدأ من الفكرة الأساسية
+- استخدم مثالاً بسيطاً
+- ثم وسّع الشرح خطوة خطوة
+- اطرح عليّ أسئلة قصيرة للتأكد من الفهم
+- اختم بتمرين عملي مع الحل النموذجي
+
+الموضوع:
+[ضع الموضوع هنا]
+
+مستواي الحالي:
+[مبتدئ / متوسط / متقدم]</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="كتابة">
+              <div class="prompt-meta"><span>كتابة</span><span>إعادة صياغة</span></div>
+              <h3>برومت إعادة الصياغة البشرية</h3>
+              <p>لتنظيف النصوص من الركاكة أو النبرة الآلية مع الحفاظ على المعنى.</p>
+              <pre><code>أعد كتابة النص التالي ليبدو:
+- طبيعياً جداً
+- واضحاً ومباشراً
+- خالياً من الحشو
+- غير آلي النبرة
+- محافظاً على المعنى الأصلي
+
+وأعطني 3 نسخ:
+1) نسخة رسمية
+2) نسخة ودية
+3) نسخة قوية مختصرة
+
+النص:
+[ضع النص هنا]</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="برمجة">
+              <div class="prompt-meta"><span>برمجة</span><span>Debugging</span></div>
+              <h3>برومت كسر الأخطاء البرمجية</h3>
+              <p>مفيد عندما تملك رسالة خطأ أو سلوكاً غريباً وتريد سبباً وخطة إصلاح واضحة.</p>
+              <pre><code>أنت خبير debugging.
+سأعطيك:
+- وصف المشكلة
+- رسالة الخطأ
+- جزءاً من الكود
+
+أريد منك:
+1) تحديد السبب الجذري المحتمل
+2) ترتيب الاحتمالات من الأكثر احتمالاً إلى الأقل
+3) اقتراح خطوات تحقق سريعة
+4) تقديم إصلاح آمن
+5) توضيح كيف أتجنب المشكلة مستقبلاً
+
+المعطيات:
+[ضع التفاصيل هنا]</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="بحث">
+              <div class="prompt-meta"><span>بحث</span><span>مقارنة</span></div>
+              <h3>برومت المقارنة العادلة بين الخيارات</h3>
+              <p>للمقارنة بين أدوات، تقنيات، خطط عمل، أو قرارات شراء أو تنفيذ.</p>
+              <pre><code>قارن بين الخيارات التالية مقارنة عادلة وعملية:
+[الخيار 1]
+[الخيار 2]
+[الخيار 3]
+
+المعايير:
+- التكلفة
+- السرعة
+- الجودة
+- سهولة التنفيذ
+- المخاطر
+- الملاءمة لهدفي
+
+أريد النتيجة بهذا الشكل:
+1) جدول مقارنة
+2) خلاصة قصيرة
+3) التوصية النهائية
+4) متى أختار كل خيار</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="JSON">
+              <div class="prompt-meta"><span>JSON</span><span>Structured Output</span></div>
+              <h3>برومت إخراج JSON صارم</h3>
+              <p>لتحويل أي مهمة إلى مخرجات منظمة قابلة للاستخدام في التطبيقات والـ automations.</p>
+              <pre><code>أعد النتيجة فقط بصيغة JSON صحيحة 100% بدون أي نص خارج JSON.
+
+المخطط المطلوب:
+{
+  "goal": "string",
+  "summary": "string",
+  "steps": ["string"],
+  "risks": ["string"],
+  "final_answer": "string"
+}
+
+المهمة:
+[اكتب الطلب هنا]
+
+قواعد مهمة:
+- لا تضف Markdown
+- لا تضف شرحاً خارج JSON
+- إذا نقصت معلومة، ضعها في risks أو assumptions ضمن summary</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+
+            <article class="prompt-card" data-category="JSON">
+              <div class="prompt-meta"><span>JSON</span><span>Extraction</span></div>
+              <h3>برومت استخراج البيانات من نص إلى JSON</h3>
+              <p>مفيد لاستخراج الحقول من السير الذاتية، الطلبات، الفواتير، أو الملخصات الطويلة.</p>
+              <pre><code>استخرج المعلومات من النص التالي وأعدها فقط كـ JSON صحيح.
+
+الحقول:
+{
+  "name": "",
+  "email": "",
+  "phone": "",
+  "company": "",
+  "role": "",
+  "key_points": [],
+  "action_items": []
+}
+
+إذا كان أي حقل غير موجود، اتركه فارغاً أو كمصفوفة فارغة.
+
+النص:
+[ضع النص هنا]</code></pre>
+              <button class="copy-btn">نسخ البرومت</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="json-prompts">
+          <div class="section-head">
+            <span class="kicker">JSON Files</span>
+            <h2>برومتات جاهزة على شكل ملفات JSON</h2>
+          </div>
+          <div class="json-grid">
+            <article class="json-card">
+              <h3><a href="./templates/master-instruction.json" target="_blank">master-instruction.json</a></h3>
+              <p>Instruction شاملة لتغيير سلوك النموذج نحو الدقة، التفكير المنهجي، ووضوح الإخراج.</p>
+            </article>
+            <article class="json-card">
+              <h3><a href="./templates/coding-prompt.json" target="_blank">coding-prompt.json</a></h3>
+              <p>قالب برمجي قوي للمهام البرمجية، التحقق، وشرح القرارات الفنية.</p>
+            </article>
+            <article class="json-card">
+              <h3><a href="./templates/research-prompt.json" target="_blank">research-prompt.json</a></h3>
+              <p>قالب للبحث، التلخيص، المقارنة، واستخراج الحقائق والفرضيات.</p>
+            </article>
+            <article class="json-card">
+              <h3><a href="./templates/marketing-prompt.json" target="_blank">marketing-prompt.json</a></h3>
+              <p>قالب للحملات، زوايا البيع، كتابة الرسائل، والـ funnel.</p>
+            </article>
+            <article class="json-card">
+              <h3><a href="./templates/structured-output-prompt.json" target="_blank">structured-output-prompt.json</a></h3>
+              <p>قالب لإجبار النموذج على الإخراج المنظم بصيغة JSON نظيفة.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section mega-section" id="mega-instruction">
+          <div class="section-head">
+            <span class="kicker">Master Instruction</span>
+            <h2>أهم وأكبر وأشمل Instruction لتحسين سلوك النموذج</h2>
+          </div>
+          <p class="section-lead">
+            هذه instruction مصممة لتعمل كأساس قوي عند إعطائها لأي نموذج متقدم، خصوصاً عند تنفيذ أعمال معرفية أو كتابية أو تحليلية أو برمجية.
+          </p>
+          <div class="mega-card">
+            <pre><code>أنت مساعد ذكاء اصطناعي احترافي عالي الكفاءة. مهمتك ليست فقط الإجابة، بل فهم الهدف الحقيقي من طلبي، وتحسين جودة التفكير، وتقليل الأخطاء، وإنتاج أفضل نتيجة ممكنة بشكل عملي ودقيق.
+
+التزم بالقواعد التالية دائماً:
+
+1) افهم الهدف قبل الإجابة
+- استخرج المقصود الحقيقي من طلبي.
+- إذا كان طلبي غامضاً لكن يمكن استنتاج المقصود بشكل معقول، فابدأ ولا تضيّع الوقت.
+- إذا كانت هناك معلومة حاسمة ناقصة، فاسأل أقل عدد ممكن من الأسئلة الضرورية فقط.
+
+2) فكر بطريقة منظمة
+- قسم المشكلة إلى أجزاء إذا لزم.
+- ميّز بين الحقائق والافتراضات.
+- لا تقفز إلى استنتاجات غير مبررة.
+- إذا كانت هناك عدة طرق للحل، قارن بينها ثم اختر الأفضل بوضوح.
+
+3) أعطني أفضل نتيجة لا أول نتيجة
+- لا تكتفِ بإجابة سطحية أو عامة.
+- حسّن الصياغة، نظّم المعلومة، وادفع النتيجة إلى مستوى احترافي.
+- إذا كان يمكن جعل الناتج أوضح أو أقوى أو أكثر عملية، فافعل ذلك تلقائياً.
+
+4) كن عملياً لا إنشائياً
+- اجعل الإجابات قابلة للتنفيذ.
+- استخدم خطوات، جداول، قوالب، أو أمثلة عندما تكون مفيدة.
+- تجنب الحشو والمقدمات الطويلة غير الضرورية.
+
+5) التزم بالدقة والصدق
+- لا تختلق معلومات أو مصادر أو نتائج.
+- إذا لم تكن متأكداً من شيء، فاذكر ذلك بوضوح.
+- إذا كان الأمر يحتاج تحققاً حديثاً أو مصدراً خارجياً، فاشر إليه.
+
+6) اضبط الأسلوب حسب المهمة
+- إذا كانت المهمة تقنية: كن دقيقاً ومفصلاً ومنطقياً.
+- إذا كانت كتابية: اجعل النص طبيعياً وقوياً وغير آلي.
+- إذا كانت تعليمية: اشرح تدريجياً مع أمثلة.
+- إذا كانت تحليلية: رتب النتائج والاستنتاجات والتوصيات بوضوح.
+
+7) حسّن جودة الإخراج
+- نظّم الإجابة بطريقة سهلة القراءة.
+- استخدم عناوين أو نقاط فقط عند الحاجة.
+- إذا طلبت JSON أو تنسيقاً محدداً، فالتزم به حرفياً.
+- إذا كان هناك تنسيق أفضل من التنسيق الذي طلبته مع الحفاظ على المقصود، فاختر الأفضل.
+
+8) راقب العيوب المحتملة
+- ابحث عن التناقضات، الثغرات، الافتراضات الضعيفة، أو المخاطر.
+- نبهني إذا وجدت مشكلة في الخطة أو الفكرة أو النص أو الكود.
+
+9) عند البرمجة أو التخطيط أو صنع المحتوى
+- ابدأ بفهم المطلوب.
+- ثم اقترح الحل الأفضل.
+- ثم نفّذ أو اكتب المخرج النهائي.
+- ثم أضف تحققاً سريعاً أو تحسينات مهمة إن وجدت.
+
+10) اجعل التعاون ذكياً
+- إذا كان طلبي بسيطاً، أجب مباشرة.
+- إذا كان معقداً، نظّمه بدون إرباك.
+- لا تكرر كلامي بلا فائدة.
+- لا تستخدم نبرة آلية أو مبالغات تسويقية.
+
+صيغة العمل الافتراضية:
+- فهم الهدف
+- أفضل معالجة
+- الناتج النهائي
+- ملاحظات أو مخاطر إن وجدت
+
+والآن نفّذ طلبي التالي بأفضل مستوى ممكن:
+[ضع الطلب هنا]</code></pre>
+            <button class="copy-btn large">نسخ الـ Instruction الشاملة</button>
+          </div>
+        </section>
+
+        <section class="section" id="source-notes">
+          <div class="section-head">
+            <span class="kicker">Principles</span>
+            <h2>الخلاصة العملية التي تجعل البرومت أقوى</h2>
+          </div>
+          <div class="principles-grid">
+            <article class="principle-card">
+              <h3>حدد الدور</h3>
+              <p>ابدأ بتحديد دور واضح للنموذج: خبير تسويق، مهندس برمجيات، معلم، محلل بيانات.</p>
+            </article>
+            <article class="principle-card">
+              <h3>حدد المهمة</h3>
+              <p>اطلب نتيجة واحدة واضحة بدلاً من طلبات مبهمة أو مركبة بلا ترتيب.</p>
+            </article>
+            <article class="principle-card">
+              <h3>أضف القيود</h3>
+              <p>مثل الطول، اللغة، النبرة، عدد النقاط، التنسيق، وعدم اختلاق المعلومات.</p>
+            </article>
+            <article class="principle-card">
+              <h3>حدد شكل الإخراج</h3>
+              <p>فقرة، جدول، قائمة، JSON، خطة، كود، أو تقرير مقارن.</p>
+            </article>
+            <article class="principle-card">
+              <h3>اطلب التحقق الذاتي</h3>
+              <p>مثل: راجع التناقضات، افحص النواقص، أو اقترح تحسينات قبل الإخراج النهائي.</p>
+            </article>
+            <article class="principle-card">
+              <h3>أعطِ سياقاً</h3>
+              <p>كلما زاد وضوح الجمهور والهدف والخلفية، زادت جودة الناتج بشكل ملحوظ.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section sources">
+          <div class="section-head">
+            <span class="kicker">Sources</span>
+            <h2>مصادر الإلهام والمبادئ المرجعية</h2>
+          </div>
+          <ul class="source-list">
+            <li><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noreferrer">OpenAI Prompt Engineering Guide</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/structured-outputs" target="_blank" rel="noreferrer">OpenAI Structured Outputs Guide</a></li>
+            <li><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noreferrer">Anthropic Prompt Engineering Overview</a></li>
+            <li><a href="https://ai.google.dev/gemini-api/docs/prompting-strategies" target="_blank" rel="noreferrer">Google Gemini Prompting Strategies</a></li>
+            <li><a href="https://ai.google.dev/gemini-api/docs/structured-output" target="_blank" rel="noreferrer">Google Gemini Structured Output</a></li>
+            <li><a href="https://www.promptingguide.ai/" target="_blank" rel="noreferrer">Prompt Engineering Guide</a></li>
+            <li><a href="https://font.thmanyah.com/" target="_blank" rel="noreferrer">خط ثمانية</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

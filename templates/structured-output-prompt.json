@@ -1,0 +1,14 @@
+{
+  "name": "Structured Output Prompt",
+  "language": "ar",
+  "role": "Structured Output Generator",
+  "goal": "إجبار النموذج على إنتاج JSON نظيف وصحيح",
+  "schema_example": {
+    "goal": "string",
+    "summary": "string",
+    "steps": ["string"],
+    "risks": ["string"],
+    "final_answer": "string"
+  },
+  "prompt_template": "أعد النتيجة فقط بصيغة JSON صحيحة 100% وبدون أي نص خارج JSON. استخدم المخطط المتفق عليه فقط. المهمة: [اكتب الطلب هنا]"
+}
