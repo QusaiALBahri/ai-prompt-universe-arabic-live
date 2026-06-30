@@ -359,6 +359,20 @@ pre {
   gap: 14px;
 }
 
+.source-note {
+  margin: 0 0 18px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: var(--surface-strong);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.source-note strong {
+  color: var(--brand-deep);
+}
+
 .source-list li {
   border-radius: 18px;
   padding: 16px 18px;
