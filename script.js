@@ -1,6 +1,7 @@
 const chips = [...document.querySelectorAll(".chip")];
 const searchInput = document.getElementById("searchInput");
 const promptSections = [...document.querySelectorAll(".prompt-section")];
+const filterAwareSections = [...document.querySelectorAll(".filter-aware-section")];
 
 let activeFilter = "all";
 let cards = [];
@@ -21,6 +22,14 @@ function updateSections() {
       (card) => !card.classList.contains("hidden")
     );
     section.classList.toggle("section-hidden", !hasVisibleCards);
+  });
+
+  filterAwareSections.forEach((section) => {
+    const sectionCategory = section.dataset.sectionCategory;
+    const shouldShow =
+      activeFilter === "all" ||
+      activeFilter === sectionCategory;
+    section.classList.toggle("section-hidden", !shouldShow);
   });
 }
 
