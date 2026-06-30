@@ -85,6 +85,9 @@
               <button class="chip" data-filter="بحث">بحث</button>
               <button class="chip" data-filter="تسويق">تسويق</button>
               <button class="chip" data-filter="تعليم">تعليم</button>
+              <button class="chip" data-filter="أزياء">أزياء</button>
+              <button class="chip" data-filter="تصميم داخلي">تصميم داخلي</button>
+              <button class="chip" data-filter="براندنج">براندنج</button>
               <button class="chip" data-filter="JSON">JSON</button>
             </div>
           </div>
@@ -394,6 +397,20 @@
           <div class="prompt-grid" id="curatedPromptGrid"></div>
         </section>
 
+        <section class="section" id="creative-visual-prompts">
+          <div class="section-head">
+            <span class="kicker">Creative Visual Fields</span>
+            <h2>البرومتات الإبداعية والبصرية</h2>
+          </div>
+          <p class="section-lead">
+            أضفت هنا <strong id="creativePromptCount">0</strong> برومتاً متخصصة في
+            <strong>الأزياء</strong> و<strong>التصميم الداخلي</strong> و<strong>البراندنج</strong>،
+            مستوحاة من أفضل البرومتات العالمية والممارسات الإبداعية المتقدمة، ثم أعيدت
+            صياغتها بالعربية لتكون جاهزة للاستخدام الفوري.
+          </p>
+          <div class="prompt-grid" id="creativePromptGrid"></div>
+        </section>
+
         <section class="section mega-section" id="mega-instruction">
           <div class="section-head">
             <span class="kicker">Master Instruction</span>
@@ -533,6 +550,8 @@
 
     <script src="./curated-prompts.js"></script>
     <script src="./render-curated-prompts.js"></script>
+    <script src="./creative-prompts.js"></script>
+    <script src="./render-creative-prompts.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
