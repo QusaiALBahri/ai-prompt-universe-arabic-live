@@ -133,7 +133,8 @@ a {
 .prompt-card p,
 .json-card p,
 .principle-card p,
-.source-list a {
+.source-list a,
+.section-lead a {
   color: var(--muted);
   line-height: 1.9;
 }

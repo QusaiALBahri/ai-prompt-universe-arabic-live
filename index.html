@@ -381,6 +381,19 @@
           </div>
         </section>
 
+        <section class="section" id="curated-prompts">
+          <div class="section-head">
+            <span class="kicker">Curated From prompts.chat</span>
+            <h2>مختارات مترجمة ومحسّنة من prompts.chat</h2>
+          </div>
+          <p class="section-lead">
+            في هذا القسم أضفت <strong id="curatedPromptCount">0</strong> برومتاً مختاراً من
+            موقع <a href="https://prompts.chat/prompts" target="_blank" rel="noreferrer">prompts.chat</a>
+            ثم أعدت صياغتها وتعريبها وتحسينها لتصبح أكثر عملية ووضوحاً للاستخدام المباشر.
+          </p>
+          <div class="prompt-grid" id="curatedPromptGrid"></div>
+        </section>
+
         <section class="section mega-section" id="mega-instruction">
           <div class="section-head">
             <span class="kicker">Master Instruction</span>
@@ -518,6 +531,8 @@
       </main>
     </div>
 
+    <script src="./curated-prompts.js"></script>
+    <script src="./render-curated-prompts.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

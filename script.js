@@ -1,11 +1,15 @@
 const chips = [...document.querySelectorAll(".chip")];
-const cards = [...document.querySelectorAll(".prompt-card")];
-const copyButtons = [...document.querySelectorAll(".copy-btn")];
 const searchInput = document.getElementById("searchInput");
 
 let activeFilter = "all";
+let cards = [];
+
+function refreshCards() {
+  cards = [...document.querySelectorAll(".prompt-card")];
+}
 
 function updateCards() {
+  refreshCards();
   const query = searchInput.value.trim().toLowerCase();
 
   cards.forEach((card) => {
@@ -28,16 +32,26 @@ chips.forEach((chip) => {
 
 searchInput.addEventListener("input", updateCards);
 
-copyButtons.forEach((button) => {
-  button.addEventListener("click", async () => {
-    const target = button.parentElement.querySelector("code");
-    if (!target) return;
+function bindCopyButtons() {
+  const copyButtons = [...document.querySelectorAll(".copy-btn")];
 
-    await navigator.clipboard.writeText(target.innerText);
-    const original = button.innerText;
-    button.innerText = "تم النسخ";
-    setTimeout(() => {
-      button.innerText = original;
-    }, 1600);
+  copyButtons.forEach((button) => {
+    if (button.dataset.bound === "true") return;
+    button.dataset.bound = "true";
+
+    button.addEventListener("click", async () => {
+      const target = button.parentElement.querySelector("code");
+      if (!target) return;
+
+      await navigator.clipboard.writeText(target.innerText);
+      const original = button.innerText;
+      button.innerText = "تم النسخ";
+      setTimeout(() => {
+        button.innerText = original;
+      }, 1600);
+    });
   });
-});
+}
+
+refreshCards();
+bindCopyButtons();
