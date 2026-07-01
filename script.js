@@ -10,6 +10,18 @@ function refreshCards() {
   cards = [...document.querySelectorAll(".prompt-card")];
 }
 
+function normalizeCategory(value) {
+  const normalized = (value || "")
+    .trim()
+    .replace(/\s+/g, " ");
+
+  if (normalized === "عامة") {
+    return "عام";
+  }
+
+  return normalized;
+}
+
 function updateSections() {
   promptSections.forEach((section) => {
     const sectionCards = [...section.querySelectorAll(".prompt-card")];
@@ -25,7 +37,7 @@ function updateSections() {
   });
 
   filterAwareSections.forEach((section) => {
-    const sectionCategory = section.dataset.sectionCategory;
+    const sectionCategory = normalizeCategory(section.dataset.sectionCategory);
     const shouldShow =
       activeFilter === "all" ||
       activeFilter === sectionCategory;
@@ -38,7 +50,7 @@ function updateCards() {
   const query = searchInput.value.trim().toLowerCase();
 
   cards.forEach((card) => {
-    const category = card.dataset.category;
+    const category = normalizeCategory(card.dataset.category);
     const text = card.textContent.toLowerCase();
     const matchesFilter = activeFilter === "all" || category === activeFilter;
     const matchesQuery = !query || text.includes(query);
@@ -52,7 +64,7 @@ chips.forEach((chip) => {
   chip.addEventListener("click", () => {
     chips.forEach((item) => item.classList.remove("active"));
     chip.classList.add("active");
-    activeFilter = chip.dataset.filter;
+    activeFilter = normalizeCategory(chip.dataset.filter);
     updateCards();
   });
 });
