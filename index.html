@@ -28,7 +28,7 @@
           </div>
           <div class="hero-stats">
             <div class="stat-card">
-              <strong>11</strong>
+              <strong>16</strong>
               <span>مجالاً عملياً</span>
             </div>
             <div class="stat-card">
@@ -88,6 +88,11 @@
               <button class="chip" data-filter="أزياء">أزياء</button>
               <button class="chip" data-filter="تصميم داخلي">تصميم داخلي</button>
               <button class="chip" data-filter="براندنج">براندنج</button>
+              <button class="chip" data-filter="الطب والصحة">الطب والصحة</button>
+              <button class="chip" data-filter="القانون وصياغة المستندات">القانون</button>
+              <button class="chip" data-filter="البحث العلمي والأكاديمي">بحث أكاديمي</button>
+              <button class="chip" data-filter="العلوم">العلوم</button>
+              <button class="chip" data-filter="الإحصاء وتحليل البيانات">الإحصاء والبيانات</button>
               <button class="chip" data-filter="JSON">JSON</button>
             </div>
           </div>
@@ -411,6 +416,20 @@
           <div class="prompt-grid" id="creativePromptGrid"></div>
         </section>
 
+        <section class="section prompt-section" id="scientific-prompts">
+          <div class="section-head">
+            <span class="kicker">Scientific Fields</span>
+            <h2>البرومتات العلمية والمهنية المتقدمة</h2>
+          </div>
+          <p class="section-lead">
+            أضفت هنا <strong id="scientificPromptCount">0</strong> برومتاً احترافية تغطي
+            <strong>الطب والصحة</strong> و<strong>القانون</strong> و<strong>البحث الأكاديمي</strong>
+            و<strong>العلوم</strong> و<strong>الإحصاء وتحليل البيانات</strong>، بصياغة منظمة
+            وعملية ومناسبة للاستخدام الفوري.
+          </p>
+          <div class="prompt-grid" id="scientificPromptGrid"></div>
+        </section>
+
         <section class="section mega-section" id="mega-instruction">
           <div class="section-head">
             <span class="kicker">Master Instruction</span>
@@ -531,7 +550,8 @@
           <p class="source-note">
             موقع <a href="https://prompts.chat/prompts" target="_blank" rel="noreferrer">prompts.chat</a>
             يُعد مرجعاً ممتازاً لاكتشاف البرومتات الجاهزة وتصنيفاتها، ويعرض حالياً
-            <strong>1932</strong> برومت. يمكن الاستفادة منه لاختيار أفكار قوية في
+            <strong>1932</strong> برومت
+            <span>(تم التحقق في 1 يوليو 2026)</span>. يمكن الاستفادة منه لاختيار أفكار قوية في
             البرمجة والكتابة والبحث والتحليل، ثم إعادة تكييفها أو تعريبها بحسب الحاجة.
           </p>
           <ul class="source-list">
@@ -548,10 +568,12 @@
       </main>
     </div>
 
-    <script src="./curated-prompts.js?v=20260701b"></script>
-    <script src="./render-curated-prompts.js?v=20260701b"></script>
-    <script src="./creative-prompts.js?v=20260701b"></script>
-    <script src="./render-creative-prompts.js?v=20260701b"></script>
-    <script src="./script.js?v=20260701b"></script>
+    <script src="./curated-prompts.js?v=20260702a"></script>
+    <script src="./render-curated-prompts.js?v=20260702a"></script>
+    <script src="./creative-prompts.js?v=20260702a"></script>
+    <script src="./render-creative-prompts.js?v=20260702a"></script>
+    <script src="./scientific-prompts.js?v=20260702a"></script>
+    <script src="./render-scientific-prompts.js?v=20260702a"></script>
+    <script src="./script.js?v=20260702a"></script>
   </body>
 </html>
